@@ -1,9 +1,16 @@
 import logo from './logo.svg';
+import image from "./assets/img/netflix.png";
 import './App.css';
+//import HelloWorld from './component/banner/Banner';
+import { Banner as Saludo } from './component/banner/Banner';
+//import './component/banner/Banner';//Traigo todo lo que tengo en Banner.js
+import Navbar from'./component/navbar/Navbar';
 
 function App() {
   return (
     <div className="App">
+      <Saludo msg="Hola Mundo!"/>
+      <Navbar src={logo} />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -21,5 +28,7 @@ function App() {
     </div>
   );
 }
+
+//HelloWorld();
 
 export default App;
